@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SQLifyHUB.Login">
+   <right>
+      <VBox prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #18191b;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="db_name" promptText="Database name">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="60.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="user" promptText="username">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="passkey" promptText="password">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="Connect" mnemonicParsing="false" onMouseClicked="#ConnectDB" prefHeight="30.0" prefWidth="202.0" style="-fx-background-radius: 20;" text="Connect DB">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <VBox prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #18191b;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="394.0" fitWidth="356.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../assets/splash.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

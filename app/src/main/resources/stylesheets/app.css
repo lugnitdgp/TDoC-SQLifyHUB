@@ -1,0 +1,46 @@
+.vbox_background_center {
+  -fx-background-image: url("../assets/background.gif");
+  -fx-background-size: contain;
+  -fx-background-repeat: no-repeat;
+}
+
+.vbox_background_right {
+  -fx-background-color: black;
+}
+
+.button_active {
+  -fx-border-radius: 30;
+  -fx-background-radius: 30;
+  -fx-background-color: #407bff;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.button_active:hover {
+  -fx-border-radius: 30;
+  -fx-background-radius: 30;
+  -fx-background-color: #407bff;
+  -fx-text-fill: white;
+}
+
+.button_inactive {
+  -fx-border-radius: 30;
+  -fx-background-radius: 30;
+  -fx-background-color: white;
+  -fx-text-fill: #407bff;
+  -fx-shadow: none;
+  -fx-font-weight: bold;
+}
+
+.button_inactive:hover {
+  -fx-background-color: #407bff;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+.input_textfeild {
+  -fx-background-color: white;
+  -fx-border-radius: 30;
+  -fx-background-radius: 30;
+  -fx-text-fill: black;
+}

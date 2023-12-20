@@ -1,29 +1,34 @@
 
 package SQLifyHUB;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+
 import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.scene.Parent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
 
 public class App extends Application {
-    
+
     private static Stage stage;
-    
-    public void start(Stage primarystage){
-        try{
+
+    public void start(Stage primarystage) {
+        try {
             stage = primarystage;
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/app.fxml"));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/app.fxml")));
             Scene scene = new Scene(root);
             primarystage.setScene(scene);
             primarystage.show();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void changeScene(String fxml) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
+        stage.setScene(new Scene(pane));
     }
 
     public static void main(String[] args) {

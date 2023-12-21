@@ -11,9 +11,9 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class App extends Application {
+    public static Stage stage;
 
-    private static Stage stage;
-
+    @Override
     public void start(Stage primarystage) {
         try {
             stage = primarystage;
@@ -33,5 +33,7 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+
     }
+
 }
